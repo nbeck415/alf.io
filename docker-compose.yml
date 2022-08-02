@@ -20,10 +20,7 @@ services:
       POSTGRES_USER: alfio
       POSTGRES_PASSWORD: alfio
     ports:
-      - target: 5432
-        published: 5432
-        protocol: tcp
-        mode: host
+      - 5432
     volumes:
       - data-volume:/var/lib/postgresql/data
 volumes:
